@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALL-IN-ONE Electric, Inc. | Electrician in Tampa, FL — Panel Upgrades, EV Chargers, 24/7 Emergency</title>
+<meta name="description" content="ALL-IN-ONE Electric, Inc. — Licensed & insured electrician serving Tampa & Hillsborough County. Panel upgrades, EV charger installation, whole-home surge protection, rewiring, and 24/7 emergency service. Up-front pricing. Call (813) 849-6331.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#0f1113; --char2:#15181c; --char3:#1c2026;
+  --amber:#ffb300; --amber-deep:#e69a00;
+  --text:#f4f5f7; --muted:#a9b0ba; --line:#2a2f37;
+  --angle: polygon(0 0, 100% 0, 100% calc(100% - 42px), 0 100%);
+  --angle-top: polygon(0 42px, 100% 0, 100% 100%, 0 100%);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--char);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.cond{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.02em;text-transform:uppercase;line-height:1.05}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92%);margin:0 auto}
+::selection{background:var(--amber);color:#111}
+
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s,box-shadow .3s;background:linear-gradient(to bottom,rgba(10,11,13,.9),rgba(10,11,13,.55) 70%,transparent)}
+header.solid{background:rgba(13,15,18,.96);box-shadow:0 2px 24px rgba(0,0,0,.5)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:.65rem}
+.brand .bolt{width:40px;height:40px;background:var(--amber);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);display:grid;place-items:center;flex:0 0 auto}
+.brand .bolt svg{width:22px;height:22px;fill:#111}
+.brand .name{font-family:'Barlow Condensed';font-weight:800;font-size:1.35rem;line-height:1;letter-spacing:.03em}
+.brand .name span{color:var(--amber)}
+.brand .sub{display:block;font-family:'Inter';font-weight:600;font-size:.62rem;letter-spacing:.34em;color:var(--muted)}
+nav.links{display:flex;gap:1.6rem;align-items:center}
+nav.links a.nl{font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);position:relative;padding:.4rem 0}
+nav.links a.nl::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--amber);transition:width .25s}
+nav.links a.nl:hover,nav.links a.nl.active{color:#fff}
+nav.links a.nl:hover::after,nav.links a.nl.active::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:.55rem;background:var(--amber);color:#111;font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:1.02rem;padding:.72rem 1.5rem;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);transition:transform .18s,background .18s;border:0;cursor:pointer}
+.btn:hover{background:#fff;transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#fff;border:2px solid var(--amber);clip-path:none;padding:.6rem 1.4rem}
+.btn.ghost:hover{background:var(--amber);color:#111}
+.btn .ph{font-family:'Inter';font-weight:700}
+.burger{display:none;background:none;border:0;cursor:pointer;z-index:110}
+.burger span{display:block;width:28px;height:3px;background:#fff;margin:6px 0;transition:.3s}
+@media(max-width:920px){
+  nav.links{position:fixed;inset:0;background:rgba(13,15,18,.98);flex-direction:column;justify-content:center;gap:1.6rem;transform:translateX(100%);transition:transform .35s ease}
+  nav.links.open{transform:none}
+  nav.links a.nl{font-size:1.3rem}
+  .burger{display:block}
+  body.menu-open .burger span:nth-child(1){transform:translateY(9px) rotate(45deg)}
+  body.menu-open .burger span:nth-child(2){opacity:0}
+  body.menu-open .burger span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:96vh;display:flex;align-items:center;padding:130px 0 110px;background:#0a0b0d}
+.hero .bg{position:absolute;inset:0;background:url('images/hero.webp') center 30%/cover no-repeat}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,9,11,.94) 20%,rgba(8,9,11,.55) 55%,rgba(8,9,11,.15) 100%)}
+.hero .grid-lines{position:absolute;inset:0;opacity:.14;background-image:linear-gradient(rgba(255,179,0,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(255,179,0,.35) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to right,black,transparent 70%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:56px;background:var(--char);clip-path:polygon(0 100%,100% 100%,100% 0)}
+.hero-inner{position:relative;z-index:2;max-width:760px}
+.kicker{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,179,0,.12);border:1px solid rgba(255,179,0,.45);color:var(--amber);font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:.5rem .95rem;margin-bottom:1.3rem}
+.kicker .dot{width:8px;height:8px;background:var(--amber);border-radius:50%;box-shadow:0 0 12px var(--amber);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.hero h1{font-size:clamp(3rem,7.5vw,5.6rem);font-weight:800}
+.hero h1 .stroke{color:transparent;-webkit-text-stroke:2px var(--amber)}
+.hero p.lede{font-size:1.12rem;color:#d7dbe0;max-width:34rem;margin:1.2rem 0 2rem}
+.hero .ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.hero .proof{display:flex;gap:2rem;margin-top:2.4rem;flex-wrap:wrap}
+.hero .proof div b{display:block;font-family:'Barlow Condensed';font-size:1.5rem;color:var(--amber)}
+.hero .proof div span{font-size:.78rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.scroll-hint{position:absolute;bottom:74px;left:50%;transform:translateX(-50%);z-index:2;color:var(--muted);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase}
+.scroll-hint::after{content:"";display:block;width:1px;height:34px;background:linear-gradient(var(--amber),transparent);margin:8px auto 0;animation:drip 1.8s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}55%{transform:scaleY(1);transform-origin:top}56%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- trust bar ---------- */
+.trust{background:var(--amber);color:#111;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust .t{padding:1.35rem 1rem;text-align:center;border-left:2px solid rgba(0,0,0,.14)}
+.trust .t:first-child{border-left:0}
+.trust .t svg{width:30px;height:30px;fill:#111;margin:0 auto .4rem}
+.trust .t b{font-family:'Barlow Condensed';font-size:1.08rem;letter-spacing:.05em;text-transform:uppercase;display:block;line-height:1.15}
+.trust .t span{font-size:.76rem;font-weight:600;opacity:.75}
+@media(max-width:760px){.trust .wrap{grid-template-columns:repeat(2,1fr)}.trust .t:nth-child(3){border-left:0}.trust .t{border-top:2px solid rgba(0,0,0,.14)}.trust .t:nth-child(-n+2){border-top:0}}
+
+/* ---------- sections ---------- */
+section{padding:96px 0}
+.sec-head{max-width:720px;margin-bottom:3rem}
+.sec-tag{color:var(--amber);font-weight:700;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;display:block;margin-bottom:.8rem}
+.sec-head h2{font-size:clamp(2.1rem,4.5vw,3.2rem);font-weight:800}
+.sec-head h2 em{font-style:normal;color:var(--amber)}
+.sec-head p{color:var(--muted);margin-top:.9rem}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* ---------- services ---------- */
+#services{background:var(--char)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+@media(max-width:960px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.svc-grid{grid-template-columns:1fr}}
+.card{background:var(--char2);border:1px solid var(--line);position:relative;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);border-color:var(--amber);box-shadow:0 18px 44px rgba(0,0,0,.5)}
+.card .ph{height:210px;overflow:hidden;position:relative}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.06)}
+.card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,17,19,.85),transparent 55%)}
+.card .num{position:absolute;top:14px;left:14px;z-index:2;background:var(--amber);color:#111;font-family:'Barlow Condensed';font-weight:800;font-size:.95rem;padding:.2rem .6rem;clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+.card .body{padding:1.5rem 1.5rem 1.7rem}
+.card h3{font-size:1.42rem;margin-bottom:.55rem}
+.card h3 span{color:var(--amber)}
+.card p{font-size:.92rem;color:var(--muted)}
+.card ul{list-style:none;margin-top:.9rem}
+.card ul li{font-size:.86rem;color:#d7dbe0;padding:.32rem 0 .32rem 1.5rem;position:relative}
+.card ul li::before{content:"";position:absolute;left:0;top:.78em;width:14px;height:2px;background:var(--amber)}
+.card .more{display:inline-block;margin-top:1rem;color:var(--amber);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+.card .more:hover{text-decoration:underline}
+.card.plain .body{padding-top:4.2rem}
+.card.plain .iconbox{position:absolute;top:0;left:0;right:0;height:210px;display:grid;place-items:center;background:linear-gradient(135deg,#191d23,#0e1013)}
+.card.plain .iconbox svg{width:84px;height:84px;fill:none;stroke:var(--amber);stroke-width:1.6}
+.card.plain .iconbox::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,179,0,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,179,0,.08) 1px,transparent 1px);background-size:34px 34px}
+
+/* ---------- stats strip ---------- */
+.stats{background:linear-gradient(120deg,#131519,#1a1e24 60%,#131519);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stat b{font-family:'Barlow Condensed';font-weight:800;font-size:clamp(2.4rem,5vw,3.6rem);color:var(--amber);display:block;line-height:1}
+.stat span{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:640px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:2rem}}
+</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ALL-IN-ONE Electric, Inc. | Electrician in Tampa, FL">
+<meta property="og:title" content="ALL-IN-ONE Electric, Inc. | Electrician in Tampa, FL">
+<meta property="og:description" content="Panel upgrades, EV chargers, surge protection & 24/7 emergency service. Call (813) 849-6331.">
+<meta property="og:image" content="https://all-in-one-electric-demo-iodine-53s-projects.vercel.app/og-image.jpg">
+<meta property="og:url" content="https://all-in-one-electric-demo-iodine-53s-projects.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ALL-IN-ONE Electric, Inc. | Electrician in Tampa, FL">
+<meta name="twitter:description" content="Panel upgrades, EV chargers, surge protection & 24/7 emergency service. Call (813) 849-6331.">
+<meta name="twitter:image" content="https://all-in-one-electric-demo-iodine-53s-projects.vercel.app/og-image.jpg">
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="ALL-IN-ONE Electric, Inc. home">
+      <span class="bolt"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span>
+      <span class="name">ALL-IN-ONE<span>&nbsp;ELECTRIC</span><span class="sub">TAMPA, FL</span></span>
+    </a>
+    <nav class="links" id="navlinks">
+      <a class="nl" href="#services">Services</a>
+      <a class="nl" href="#why">Why Us</a>
+      <a class="nl" href="#process">Process</a>
+      <a class="nl" href="#reviews">Reviews</a>
+      <a class="nl" href="#faq">FAQ</a>
+      <a class="nl" href="#contact">Contact</a>
+      <a class="btn" href="tel:8138496331"><span class="ph">(813) 849-6331</span></a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="bg"></div><div class="veil"></div><div class="grid-lines"></div>
+  <div class="wrap hero-inner">
+    <span class="kicker"><span class="dot"></span>Licensed &amp; Insured · Tampa, FL</span>
+    <h1>Power problems?<br><span class="stroke">Handled.</span></h1>
+    <p class="lede">From dead outlets to full panel upgrades, ALL-IN-ONE Electric keeps Tampa homes powered, protected, and up to code — with up-front pricing and permits pulled on every job that needs one.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:8138496331">Call (813) 849-6331</a>
+      <a class="btn ghost" href="#contact">Get a Free Quote</a>
+    </div>
+    <div class="proof">
+      <div><b>24/7</b><span>Emergency Service</span></div>
+      <div><b>100%</b><span>Up-Front Pricing</span></div>
+      <div><b>200A</b><span>Panel Upgrades</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</div>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="t rv"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3zm-2 15-4-4 1.4-1.4L10 14.2l6.6-6.6L18 9l-8 8z"/></svg><b>Licensed &amp; Insured</b><span>FL electrical contractor</span></div>
+    <div class="t rv d1"><svg viewBox="0 0 24 24"><path d="M21.4 11.6 12.4 2.6c-.4-.4-1-.4-1.4 0L2.6 11c-.4.4-.4 1 0 1.4l8.9 8.9c.4.4 1 .4 1.4 0l8.5-8.4c.4-.3.4-.9 0-1.3zM6.5 12 12 6.5 17.5 12 12 17.5 6.5 12z"/></svg><b>Up-Front Pricing</b><span>Agreed before we start</span></div>
+    <div class="t rv d2"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 5h-2v6l5 3 1-1.7-4-2.3V7z"/></svg><b>24/7 Emergency</b><span>Outages &amp; hazards</span></div>
+    <div class="t rv d3"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13z"/></svg><b>Permits Pulled</b><span>Tampa &amp; Hillsborough Co.</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">What we do</span>
+      <h2>Every amp, <em>handled right</em></h2>
+      <p>Residential electrical, done to NEC code with a proper load calculation before we touch a wire. If your job needs a permit in Tampa or Hillsborough County, we pull it.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="card rv">
+        <div class="ph"><span class="num">01</span><img src="images/service-panel.webp" alt="Electrician torquing breakers inside an open service panel" loading="lazy"></div>
+        <div class="body">
+          <h3>Panel Upgrades <span>&amp; Service Changes</span></h3>
+          <p>Still running a 100-amp panel with breakers that trip every summer? We size and install modern 200-amp service with room to grow.</p>
+          <ul><li>Load calculation on every upgrade</li><li>Breaker &amp; sub-panel installs</li><li>Meter base &amp; service mast work</li></ul>
+          <a class="more" href="#contact">Get panel pricing →</a>
+        </div>
+      </article>
+      <article class="card rv d1">
+        <div class="ph"><span class="num">02</span><img src="images/service-ev.webp" alt="Electrician mounting a home EV charger in a garage" loading="lazy"></div>
+        <div class="body">
+          <h3>EV Charger <span>Installation</span></h3>
+          <p>A dedicated 240V circuit for your Level 2 charger — we verify your panel can carry the load <em>before</em> we quote, so there are no surprises.</p>
+          <ul><li>All major charger brands</li><li>Garage &amp; outdoor installs</li><li>Panel check included in quote</li></ul>
+          <a class="more" href="#contact">Charge at home →</a>
+        </div>
+      </article>
+      <article class="card rv d2">
+        <div class="ph"><span class="num">03</span><img src="images/service-surge.webp" alt="Electrician installing whole-home surge protection at an outdoor meter" loading="lazy"></div>
+        <div class="body">
+          <h3>Whole-Home <span>Surge Protection</span></h3>
+          <p>Florida is the lightning capital of the U.S. One strike near your service drop can fry every board in the house. A panel-mounted SPD stops it at the door.</p>
+          <ul><li>Protects HVAC, appliances &amp; electronics</li><li>Installed at the panel in one visit</li><li>Point-of-use layers for home offices</li></ul>
+          <a class="more" href="#contact">Storm-proof my home →</a>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><span class="num">04</span><img src="images/service-lighting.webp" alt="Electrician wiring a recessed ceiling light" loading="lazy"></div>
+        <div class="body">
+          <h3>Lighting, Fans <span>&amp; Fixtures</span></h3>
+          <p>Recessed cans, chandeliers, ceiling fans, landscape and security lighting — hung straight, wired clean, and rated for the box they're on.</p>
+          <ul><li>Recessed &amp; under-cabinet LED</li><li>Ceiling fan install &amp; repair</li><li>Outdoor &amp; security lighting</li></ul>
+          <a class="more" href="#contact">Brighten it up →</a>
+        </div>
+      </article>
+      <article class="card plain rv d1">
+        <div class="iconbox"><svg viewBox="0 0 24 24"><path d="M4 17c4-1 5-4 5-7V5l3 2 3-2v5c0 3 1 6 5 7M7 21h10M12 17v4"/></svg></div>
+        <div class="body">
+          <span class="num">05</span>
+          <h3>Rewiring <span>&amp; Aluminum Wiring</span></h3>
+          <p>Tampa homes built between 1965 and 1973 often have aluminum branch wiring — a known fire risk at loose connections. We remediate with approved copper pigtailing at every device.</p>
+          <ul><li>Full &amp; partial rewires</li><li>Aluminum-to-copper remediation</li><li>Ungrounded two-prong upgrades</li></ul>
+          <a class="more" href="#contact">Make it safe →</a>
+        </div>
+      </article>
+      <article class="card plain rv d2">
+        <div class="iconbox"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+        <div class="body">
+          <span class="num">06</span>
+          <h3>Troubleshooting, Repairs <span>&amp; Code Corrections</span></h3>
+          <p>Breaker keeps tripping? Half the house dark? We trace it with real diagnostics — not guesswork — and fix it to current NEC code.</p>
+          <ul><li>GFCI / AFCI protection</li><li>Outlets, switches &amp; dimmers</li><li>Smoke/CO detector installs</li></ul>
+          <a class="more" href="#contact">Fix it fast →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat rv"><b><span class="count" data-to="24">0</span>/7</b><span>Emergency Service</span></div>
+    <div class="stat rv d1"><b><span class="count" data-to="100">0</span>%</b><span>Up-Front Pricing</span></div>
+    <div class="stat rv d2"><b><span class="count" data-to="60">0</span><small style="font-size:.5em">min</small></b><span>Avg. Emergency Response</span></div>
+    <div class="stat rv d3"><b><span class="count" data-to="200">0</span>A</b><span>Panel Upgrades Standard</span></div>
+  </div>
+</div>
+
+<section id="why" style="background:var(--char2);clip-path:var(--angle-top);padding-top:120px">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="rv">
+        <span class="sec-tag">Why ALL-IN-ONE</span>
+        <h2 style="font-size:clamp(2.1rem,4.5vw,3.2rem);font-weight:800">An electrician's <em style="font-style:normal;color:var(--amber)">electrician</em></h2>
+        <p style="color:var(--muted);margin:1rem 0 1.8rem">Most callbacks in this trade come from shortcuts: a panel sized by guess, a charger on a circuit that was already full, a permit nobody pulled. We don't work that way.</p>
+        <ul class="signals">
+          <li class="rv"><b>Load calculation first.</b> Before any panel upgrade or EV charger, we run the numbers on your service — in writing, not by feel.</li>
+          <li class="rv d1"><b>Permits pulled, inspections passed.</b> We handle Tampa and Hillsborough County permitting so your work is legal and insurable.</li>
+          <li class="rv d2"><b>Up-front flat pricing.</b> You approve the exact price before a single breaker is flipped. No hourly meter running.</li>
+          <li class="rv d3"><b>Clean-job promise.</b> Shoe covers, drop cloths, and a panel directory that actually matches your breakers when we leave.</li>
+          <li class="rv d1"><b>Workmanship warranty.</b> If our work fails, we come back and make it right. That's the whole policy.</li>
+        </ul>
+      </div>
+      <div class="rv d1">
+        <div class="about-frame">
+          <img src="images/about.webp" alt="Electrician coiling copper wire beside a stocked work van" loading="lazy">
+          <div class="about-badge"><b>24/7</b><span>Emergency<br>dispatch</span></div>
+        </div>
+        <blockquote class="craft-quote">"Wire it like your own family's sleeping under that roof."<cite>— the house rule on every job</cite></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.why-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:start}
+@media(max-width:900px){.why-grid{grid-template-columns:1fr}}
+.signals{list-style:none;display:grid;gap:1rem}
+.signals li{background:var(--char);border:1px solid var(--line);border-left:4px solid var(--amber);padding:1rem 1.2rem;font-size:.93rem;color:var(--muted)}
+.signals li b{color:#fff;display:block;font-size:.98rem;margin-bottom:.2rem}
+.about-frame{position:relative;clip-path:polygon(0 0,100% 0,100% calc(100% - 34px),0 100%)}
+.about-frame img{width:100%;height:420px;object-fit:cover}
+.about-badge{position:absolute;bottom:44px;right:18px;background:var(--amber);color:#111;text-align:center;padding:.9rem 1.2rem;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)}
+.about-badge b{font-family:'Barlow Condensed';font-size:1.9rem;font-weight:800;display:block;line-height:1}
+.about-badge span{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.craft-quote{margin-top:1.4rem;border-left:3px solid var(--amber);padding:.4rem 0 .4rem 1.2rem;font-family:'Barlow Condensed';font-size:1.5rem;font-weight:600;color:#e8eaed}
+.craft-quote cite{display:block;font-family:'Inter';font-style:normal;font-size:.8rem;color:var(--muted);margin-top:.3rem;letter-spacing:.06em}
+</style>
+
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">How it works</span>
+      <h2>Call. Diagnose. <em>Done right.</em></h2>
+      <p>No mystery, no upsell theater. Four steps, and you're back to full power.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="snum">1</span><h3>Call or Book</h3><p>Reach us at <a href="tel:8138496331" style="color:var(--amber);font-weight:700">(813) 849-6331</a> — 24/7 for emergencies — or send the quote form below. Tell us what's happening in plain English.</p></div>
+      <div class="step rv d1"><span class="snum">2</span><h3>Diagnosis</h3><p>We show up on time, meter in hand, and trace the real cause — then run a load calculation when the job calls for one.</p></div>
+      <div class="step rv d2"><span class="snum">3</span><h3>Up-Front Price</h3><p>You get one flat price in writing before any work starts. Approve it, and we get to work. Decline it, and the diagnostic visit is all you pay for.</p></div>
+      <div class="step rv d3"><span class="snum">4</span><h3>Done Right</h3><p>Permitted, inspected, tested under load, and cleaned up. Panel directory updated. Workmanship warranted.</p></div>
+    </div>
+  </div>
+</section>
+
+<style>
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;counter-reset:st}
+@media(max-width:960px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:var(--char2);border:1px solid var(--line);padding:2rem 1.5rem;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
+.step:hover{transform:translateY(-5px);border-color:var(--amber)}
+.step::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--amber),transparent)}
+.snum{font-family:'Barlow Condensed';font-weight:800;font-size:3.2rem;color:transparent;-webkit-text-stroke:1.5px var(--amber);line-height:1;display:block;margin-bottom:.7rem}
+.step h3{font-size:1.3rem;margin-bottom:.5rem}
+.step p{font-size:.9rem;color:var(--muted)}
+</style>
+
+<section id="reviews" style="background:var(--char2);clip-path:var(--angle);padding-bottom:130px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Reviews</span>
+      <h2>Tampa homeowners, <em>unfiltered</em></h2>
+    </div>
+    <div class="slider rv" id="slider">
+      <div class="track" id="track">
+        <figure class="slide">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Breaker kept tripping every time the AC kicked on. They ran a load calc, showed me the panel was maxed out, and had a 200-amp service in two days. Price was exactly what they quoted."</blockquote>
+          <figcaption><b>Marcus</b><span>South Tampa · Panel Upgrade</span></figcaption>
+        </figure>
+        <figure class="slide">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Two other companies just wanted to slap a charger on my old panel. ALL-IN-ONE checked the load first, found we were fine, and installed the Level 2 circuit the same week. Honest work."</blockquote>
+          <figcaption><b>Dana</b><span>Carrollwood · EV Charger</span></figcaption>
+        </figure>
+        <figure class="slide">
+          <div class="stars">★★★★★</div>
+          <blockquote>"After the last lightning storm fried our neighbor's AC board, we got whole-home surge protection. Tech explained everything, permit was handled, in and out in a morning."</blockquote>
+          <figcaption><b>Ray</b><span>Brandon · Surge Protection</span></figcaption>
+        </figure>
+        <figure class="slide">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Our 1971 house had aluminum wiring and it scared us. They remediated every device with copper pigtails, labeled the panel, and walked us through all of it. Sleep better now."</blockquote>
+          <figcaption><b>Karen</b><span>Westchase · Aluminum Wiring</span></figcaption>
+        </figure>
+      </div>
+      <div class="snav">
+        <button id="prev" aria-label="Previous review">←</button>
+        <div class="dots" id="dots"></div>
+        <button id="next" aria-label="Next review">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.slider{position:relative;overflow:hidden;background:var(--char);border:1px solid var(--line);clip-path:polygon(0 0,100% 0,100% calc(100% - 28px),0 100%)}
+.track{display:flex;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.slide{flex:0 0 100%;padding:3rem clamp(1.5rem,6vw,4.5rem) 2.2rem}
+.stars{color:var(--amber);font-size:1.3rem;letter-spacing:.2em;margin-bottom:1rem}
+.slide blockquote{font-family:'Barlow Condensed';font-size:clamp(1.35rem,2.8vw,1.9rem);font-weight:500;line-height:1.35;color:#eef0f3;max-width:56rem}
+.slide figcaption{margin-top:1.4rem}
+.slide figcaption b{font-family:'Barlow Condensed';font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);display:block}
+.slide figcaption span{font-size:.82rem;color:var(--muted)}
+.snav{display:flex;align-items:center;justify-content:center;gap:1.2rem;padding:0 0 2rem}
+.snav button{background:transparent;border:1px solid var(--line);color:#fff;width:44px;height:44px;font-size:1.2rem;cursor:pointer;transition:.2s}
+.snav button:hover{background:var(--amber);color:#111;border-color:var(--amber)}
+.dots{display:flex;gap:.5rem}
+.dots i{width:26px;height:4px;background:var(--line);cursor:pointer;transition:.2s}
+.dots i.on{background:var(--amber)}
+</style>
+
+<section id="area">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Service area</span>
+      <h2>Proudly serving <em>Tampa &amp; Hillsborough County</em></h2>
+      <p>Based in Tampa, on the road across the county every day. Outside the list? Call — if we can reach you same-day, we will.</p>
+    </div>
+    <div class="chips rv">
+      <span>Tampa</span><span>South Tampa</span><span>Carrollwood</span><span>Westchase</span><span>Town 'n' Country</span><span>Brandon</span><span>Riverview</span><span>Temple Terrace</span><span>Lutz</span><span>Plant City</span><span>Seffner</span><span>Valrico</span><span>Ybor City</span><span>Hyde Park</span>
+    </div>
+  </div>
+</section>
+
+<style>
+.chips{display:flex;flex-wrap:wrap;gap:.7rem}
+.chips span{border:1px solid var(--line);background:var(--char2);padding:.55rem 1.1rem;font-size:.86rem;font-weight:600;letter-spacing:.04em;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);transition:.2s}
+.chips span:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-2px)}
+</style>
+
+<section id="faq" style="background:var(--char2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Good to know</span>
+      <h2>Straight <em>answers</em></h2>
+    </div>
+    <div class="acc rv">
+      <div class="item"><button class="q">Do I need a panel upgrade to install an EV charger?<span>+</span></button><div class="a"><p>Maybe — and anyone who quotes you without checking is guessing. A Level 2 charger adds a continuous 40–60 amp load. We run a NEC load calculation on your existing service first. If your panel has the headroom, we install the dedicated 240V circuit. If it doesn't, we'll show you the math and price the upgrade honestly.</p></div></div>
+      <div class="item"><button class="q">Is whole-home surge protection really necessary in Florida?<span>+</span></button><div class="a"><p>Florida sees more lightning strikes than any other state, and a single nearby strike can send thousands of volts through your service drop — frying HVAC boards, appliances, and anything with a chip. A panel-mounted surge protective device clamps that spike before it reaches your home. It's one of the cheapest insurance policies your electrical system can have.</p></div></div>
+      <div class="item"><button class="q">My home was built in the late '60s. Should I worry about aluminum wiring?<span>+</span></button><div class="a"><p>Homes wired between roughly 1965 and 1973 often have aluminum branch circuits, which expand and contract more than copper — loosening connections over time and creating heat at outlets and switches. The fix isn't always a full rewire: we remediate with approved aluminum-to-copper connections at every device, which is the industry-accepted repair.</p></div></div>
+      <div class="item"><button class="q">Do you pull permits?<span>+</span></button><div class="a"><p>Yes. Panel upgrades, service changes, EV circuits, and rewires all require permits in Tampa and Hillsborough County. We handle the paperwork and the inspection — unpermitted electrical work can void your homeowner's insurance when it matters most.</p></div></div>
+      <div class="item"><button class="q">How does your pricing work?<span>+</span></button><div class="a"><p>Flat-rate and up front. After diagnosis, you get one written price before any work begins — the number we quote is the number you pay. Emergency diagnostic visits are billed separately and credited toward the repair if you approve it.</p></div></div>
+      <div class="item"><button class="q">Do you really offer 24/7 emergency service?<span>+</span></button><div class="a"><p>Yes. Total outages, burning smells, sparking outlets, storm damage — call <a href="tel:8138496331" style="color:var(--amber);font-weight:700">(813) 849-6331</a> any time. If it's an immediate hazard, we'll talk you through making it safe over the phone while we're rolling.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<style>
+.acc{max-width:820px}
+.acc .item{border:1px solid var(--line);background:var(--char);margin-bottom:.7rem;overflow:hidden}
+.acc .q{width:100%;background:none;border:0;color:#fff;font-family:'Barlow Condensed';font-size:1.25rem;font-weight:600;text-align:left;padding:1.15rem 1.4rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.acc .q span{color:var(--amber);font-size:1.6rem;line-height:1;transition:transform .3s;flex:0 0 auto}
+.acc .item.open .q span{transform:rotate(45deg)}
+.acc .a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.acc .a p{padding:0 1.4rem 1.4rem;color:var(--muted);font-size:.93rem;max-width:60rem}
+.acc .item.open{border-color:var(--amber)}
+</style>
+
+<section id="contact" style="background:linear-gradient(160deg,#14161a,#0e1013);clip-path:var(--angle-top);padding-top:120px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-tag">Get a quote</span>
+      <h2>Tell us what's <em>going on</em></h2>
+      <p>Free quotes on planned work. Emergencies — skip the form and call now.</p>
+    </div>
+    <div class="contact-grid">
+      <form id="quote" class="rv" novalidate>
+        <div class="frow">
+          <label>Full name<input type="text" name="name" required placeholder="Jane Doe" autocomplete="name"></label>
+          <label>Phone<input type="tel" name="phone" required placeholder="(813) 555-0100" autocomplete="tel"></label>
+        </div>
+        <label>Email<input type="email" name="email" placeholder="you@email.com" autocomplete="email"></label>
+        <label>What do you need?
+          <select name="service" required>
+            <option value="" disabled selected>Choose a service…</option>
+            <option>Panel upgrade / service change</option>
+            <option>EV charger installation</option>
+            <option>Whole-home surge protection</option>
+            <option>Lighting / ceiling fans</option>
+            <option>Rewiring / aluminum wiring</option>
+            <option>Troubleshooting / repair</option>
+            <option>Emergency — call me ASAP</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Details<textarea name="msg" rows="4" placeholder="e.g. Breaker trips when the dryer and AC run together. 100-amp panel, house built 1978."></textarea></label>
+        <button class="btn" type="submit" style="width:100%;justify-content:center">Request My Free Quote</button>
+        <p class="fine">No spam, no robocalls. A real electrician calls you back.</p>
+      </form>
+      <div class="rv d1">
+        <a class="ccard big" href="tel:8138496331">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+          <span><b>Call or text</b>(813) 849-6331</span>
+        </a>
+        <a class="ccard" href="mailto:rjones@aioelectric.com">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span><b>Email</b>rjones@aioelectric.com</span>
+        </a>
+        <div class="ccard static">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 5h-2v6l5 3 1-1.7-4-2.3V7z"/></svg>
+          <span><b>Hours</b>Office: Mon–Sat 7am–7pm<br>Emergency: 24/7/365</span>
+        </div>
+        <div class="ccard static">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+          <span><b>Service area</b>Tampa &amp; Hillsborough County, FL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:start}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+form#quote{background:var(--char2);border:1px solid var(--line);padding:2rem;clip-path:polygon(0 0,100% 0,100% calc(100% - 24px),0 100%)}
+form#quote .frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:560px){form#quote .frow{grid-template-columns:1fr}}
+form#quote label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.1rem}
+form#quote input,form#quote select,form#quote textarea{width:100%;margin-top:.45rem;background:var(--char);border:1px solid var(--line);color:#fff;font-family:'Inter';font-size:.95rem;padding:.8rem .95rem;border-radius:0;transition:border-color .2s}
+form#quote input:focus,form#quote select:focus,form#quote textarea:focus{outline:none;border-color:var(--amber)}
+form#quote .fine{font-size:.76rem;color:var(--muted);text-align:center;margin-top:.8rem}
+.ccard{display:flex;gap:1.1rem;align-items:center;background:var(--char2);border:1px solid var(--line);padding:1.4rem;margin-bottom:1rem;transition:.2s}
+a.ccard:hover{border-color:var(--amber);transform:translateX(6px)}
+.ccard svg{width:34px;height:34px;fill:var(--amber);flex:0 0 auto}
+.ccard b{display:block;font-family:'Barlow Condensed';font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ccard span{font-family:'Barlow Condensed';font-size:1.45rem;font-weight:700}
+.ccard.big{background:var(--amber);border-color:var(--amber)}
+.ccard.big svg{fill:#111}
+.ccard.big b{color:#111;opacity:.7}
+.ccard.big span{color:#111;font-size:1.8rem}
+</style>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="margin-bottom:1rem"><span class="bolt"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></span><span class="name">ALL-IN-ONE<span>&nbsp;ELECTRIC</span><span class="sub">TAMPA, FL</span></span></div>
+        <p>Licensed &amp; insured electrical contractor serving Tampa &amp; Hillsborough County. Panel upgrades, EV chargers, surge protection, rewiring, and 24/7 emergency service — permitted, inspected, and done right.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Panel Upgrades</a><a href="#services">EV Charger Install</a><a href="#services">Surge Protection</a><a href="#services">Lighting &amp; Fans</a><a href="#services">Rewiring</a><a href="#services">Repairs &amp; Code</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#why">Why Us</a><a href="#process">Our Process</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:8138496331">(813) 849-6331</a>
+        <a href="mailto:rjones@aioelectric.com">rjones@aioelectric.com</a>
+        <span class="fmuted">Tampa, FL<br>Serving Hillsborough County</span>
+      </div>
+    </div>
+    <div class="fbase"><span>© 2026 ALL-IN-ONE Electric, Inc. All rights reserved.</span><span>Licensed &amp; Insured · Tampa, FL</span></div>
+  </div>
+</footer>
+
+<style>
+footer{background:#0a0c0e;border-top:3px solid var(--amber);padding:64px 0 0}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem}
+@media(max-width:820px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+footer p{font-size:.88rem;color:var(--muted);max-width:22rem}
+footer h4{font-family:'Barlow Condensed';font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem}
+footer .fgrid a{display:block;font-size:.9rem;color:var(--muted);padding:.28rem 0}
+footer .fgrid a:hover{color:#fff}
+.fmuted{font-size:.9rem;color:var(--muted);display:block;margin-top:.4rem}
+.fbase{border-top:1px solid var(--line);padding:1.4rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.78rem;color:var(--muted)}
+</style>
+
+<div class="callbar">
+  <a href="tel:8138496331" class="cb-call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call Now</a>
+  <a href="#contact" class="cb-quote">Free Quote</a>
+</div>
+<style>
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:rgba(12,14,17,.97);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem;font-family:'Barlow Condensed';font-weight:700;font-size:1.15rem;text-transform:uppercase;letter-spacing:.05em}
+.cb-call{color:#111;background:var(--amber)}
+.cb-call svg{width:20px;height:20px;fill:#111}
+.cb-quote{color:#fff}
+@media(max-width:760px){.callbar{display:flex}body{padding-bottom:58px}}
+</style>
+
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3zm-2 15-4-4 1.4-1.4L10 14.2l6.6-6.6L18 9l-8 8z"/></svg><div><b>Request received.</b><span>Thanks — a real electrician will call you back shortly.</span></div></div>
+<style>
+.toast{position:fixed;bottom:88px;left:50%;transform:translate(-50%,320px);background:#101216;border:1px solid var(--amber);border-left:6px solid var(--amber);padding:1rem 1.3rem;display:flex;gap:.9rem;align-items:center;z-index:200;transition:transform .45s cubic-bezier(.2,.7,.2,1);max-width:min(440px,92vw);box-shadow:0 16px 50px rgba(0,0,0,.6)}
+.toast.show{transform:translate(-50%,0)}
+.toast svg{width:34px;height:34px;fill:var(--amber);flex:0 0 auto}
+.toast b{font-family:'Barlow Condensed';font-size:1.1rem;letter-spacing:.05em;text-transform:uppercase;display:block}
+.toast span{font-size:.85rem;color:var(--muted)}
+</style>
+
+<script>
+(function(){
+  "use strict";
+  var hdr=document.getElementById('hdr');
+  addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{passive:true});
+
+  var burger=document.getElementById('burger'),links=document.getElementById('navlinks');
+  burger.addEventListener('click',function(){var o=links.classList.toggle('open');document.body.classList.toggle('menu-open',o)});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');document.body.classList.remove('menu-open')})});
+
+  // active nav link
+  var secs=['services','why','process','reviews','faq','contact'].map(function(id){return document.getElementById(id)});
+  var nls=links.querySelectorAll('a.nl');
+  var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){nls.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+  secs.forEach(function(s){s&&io2.observe(s)});
+
+  // reveal on scroll
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+
+  // animated counters
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;cio.unobserve(e.target);var el=e.target,to=+el.dataset.to,t0=performance.now(),dur=1400;(function tick(t){var p=Math.min((t-t0)/dur,1),ease=1-Math.pow(1-p,3);el.textContent=Math.round(to*ease);if(p<1)requestAnimationFrame(tick)})(t0)})},{threshold:.5});
+  document.querySelectorAll('.count').forEach(function(el){cio.observe(el)});
+
+  // testimonial slider
+  var track=document.getElementById('track'),slides=track.children.length,i=0,dots=document.getElementById('dots'),timer;
+  for(var d=0;d<slides;d++){var dot=document.createElement('i');(function(n){dot.addEventListener('click',function(){go(n);restart()})})(d);dots.appendChild(dot)}
+  function go(n){i=(n+slides)%slides;track.style.transform='translateX(-'+i*100+'%)';Array.prototype.forEach.call(dots.children,function(x,k){x.classList.toggle('on',k===i)})}
+  function restart(){clearInterval(timer);timer=setInterval(function(){go(i+1)},6000)}
+  document.getElementById('prev').addEventListener('click',function(){go(i-1);restart()});
+  document.getElementById('next').addEventListener('click',function(){go(i+1);restart()});
+  var sx=0;track.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+  track.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){go(i+(dx<0?1:-1));restart()}},{passive:true});
+  go(0);restart();
+
+  // FAQ accordion
+  document.querySelectorAll('.acc .item').forEach(function(it){
+    var q=it.querySelector('.q'),a=it.querySelector('.a');
+    q.addEventListener('click',function(){
+      var open=it.classList.contains('open');
+      document.querySelectorAll('.acc .item.open').forEach(function(o){o.classList.remove('open');o.querySelector('.a').style.maxHeight=null});
+      if(!open){it.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
+    });
+  });
+
+  // quote form -> toast
+  var form=document.getElementById('quote'),toast=document.getElementById('toast'),tt;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=form.name.value.trim(),phone=form.phone.value.trim(),svc=form.service.value;
+    if(!name||!phone||!svc){[form.name,form.phone,form.service].forEach(function(f){f.style.borderColor=(!f.value.trim())?'#e5484d':'var(--line)'});return}
+    toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},5200);
+    form.reset();
+  });
+})();
+</script>
+</body>
+</html>
